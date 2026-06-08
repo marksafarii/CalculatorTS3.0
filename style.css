@@ -1,0 +1,123 @@
+body {
+    background:#434343;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family:Arial, sans-serif;
+
+}
+.calculator {
+    background:#fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(83, 1, 83, 0.5);
+    width:300px;
+}
+.display {
+    width: 90%;
+    height: 60px;
+    text-align: right;
+    font-size: 2rem;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #0786bc9e;
+    border-radius: 8px;
+}
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  button {
+    padding: 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 20px;
+    background-color:rgba(235, 9, 16, 0.21);
+    cursor: pointer;
+  }
+  button:hover{
+    background-color:darkorange;
+
+  }
+  .operator {
+    background-color: #0786bc9e;
+    color: white;
+  }
+    .operator:hover {
+        background-color: #07bc86;
+    }
+    .equal {
+        background-color: #b21d439e;
+        color: white;   
+    }
+    .equal:hover {
+        background-color: #f3436f;
+    }
+    .clear {
+        display: inline;
+        background-color: #1db2339e;
+        color: white;       
+    }
+    .clear:hover {
+        background-color: #01756f;
+    }
+
+    /*dark theme*/
+    body.dark {
+        background: #1e1e1e;
+    }   
+    .calculator.dark {
+        background: #2c2c2c;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }       
+    .display.dark {
+        border: 2px solid #ffffff9e;
+        color: white;
+    }   
+    button.dark {
+        background-color: #555;
+        color: white;
+    }   
+    button.dark:hover {
+        background-color: #777;
+    }
+    .operator.dark {
+        background-color: #0786bc9e;
+    }
+    .operator.dark:hover {
+        background-color: #07bc86;
+    }
+    .equal.dark {
+        background-color: #b21d439e;
+    }
+    .equal.dark:hover {
+        background-color: #f3436f;
+    }
+    .clear.dark {
+        background-color: #1db2339e;
+    }
+    .clear.dark:hover {
+        background-color: #01756f;
+    }
+
+    /* history feature */
+    .history {
+        margin-top: 20px;
+        margin-right: 10px;
+        background: #fff8e1;
+        padding: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        border-radius: 10px;
+        max-height: 150px;
+        overflow-y: auto;
+        font-size: 1rem;
+    }
+    body.dark .history {
+        background: #040700;
+        color: white;
+        
+    }
