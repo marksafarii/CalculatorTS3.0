@@ -48,8 +48,8 @@ function calculateResult() {
 }catch {
         display.value = 'Error';  
 }
+}
 function deleteLast() {
     display.value = display.value.slice(0, -1);
 }
-
-}
+lay.value.slice(0, -1);
