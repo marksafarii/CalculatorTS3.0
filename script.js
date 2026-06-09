@@ -38,7 +38,7 @@ function calculateResult() {
     try {
         //TRANSLATION LAYER
         //this take the display value and replaces '÷" with '/' and '×' with '*' 
-        let expression = display.value.replace(/÷/g, '').replace(/×/g, '*');  
+        let expression = display.value.replace(/÷/g, '/').replace(/×/g, '*');  
         
         //Now js understands the expression and can evaluate it
         const result = Function(`'use strict'; return (${expression})`)();
